@@ -7,14 +7,19 @@
   height: 100%;
   width: 100%;
   display: flex;
-  
-  
-}
+
+  }
+
 .wrap {
   flex: 1;
-  height: 100%;
-  width: 100%;
+  margin: 1.5em;
 
+}
+.image {
+  display: block;
+  height: 90%;
+  width: 100%;
+  
 }
 
 .App-logo {
@@ -35,6 +40,12 @@
 
 .App-intro {
   font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+  .table {
+    flex-direction: column;
+  }
 }
 
 

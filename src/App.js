@@ -15,12 +15,15 @@ class App extends Component {
       <header>
         <div className="table">
           <div className="wrap">
+            <img src={BlackMirror} className="image" alt="Black Mirror" />
             <h2>Black Mirror</h2>
           </div>
           <div className="wrap">
+            <img src={BreakingBad} className="image" alt="BreakingBad" />
             <h2>Breaking Bad</h2>
           </div>
           <div className="wrap">
+            <img src={DeathNote} className="image" alt="Death Note" />
             <h2>Death Note</h2>
           </div>
         </div>
@@ -28,18 +31,19 @@ class App extends Component {
 
           <div className="table">
             <div className="wrap">
+              <img src={GameOfThrones} className="image" alt="GameOfThrones" />
               <h2>Game of Thrones</h2>
-        
             </div>
             <div className="wrap">
+              <img src={TheWalkingDead} className="image" alt="The Walking Dead" />
               <h2>The Walking Death</h2>
             </div>
             <div className="wrap">
+              <img src={TheWire} className="image" alt="The Wire" />
               <h2>The Wire</h2>
-            </div>
+            </div>  
           </div>
           
-            
         
          {/* <img src={img} className="App-logo" alt="cover" />  */}
         </header>
