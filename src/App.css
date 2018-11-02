@@ -8,20 +8,36 @@
   width: 100%;
   display: flex;
 
+
   }
 
 .wrap {
   flex: 1;
   margin: 1.5em;
+  position: relative;
 
 }
+h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  background-color: black;
+  padding-left: 3px;
+  padding-right: 3px; 
+
+}
+
 .image {
   display: block;
-  height: 90%;
   width: 100%;
-  
-}
 
+}
+.wrap:hover h2{
+  opacity: 1;
+
+}
 .App-logo {
   height: 50vh;
   
