@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import img from './img/Man-On-Fire.jpg';
 import BlackMirror from './img/BlackMirror.jpg';
 import BreakingBad from './img/BreakingBad.jpg';
 import DeathNote from './img/DeathNote.jpg';
@@ -7,50 +6,39 @@ import GameOfThrones from './img/GameOfThrones.jpg';
 import TheWalkingDead from './img/TheWalkingDead.jpg';
 import TheWire from './img/TheWire.jpg';
 import './App.css';
+import { POINT_CONVERSION_COMPRESSED } from 'constants';
 
 class App extends Component {
   render() {
     return (
-    <div className="App">
-      <header>
-        <div className="table">
-          <div className="wrap">
-            <img src={BlackMirror} className="image" alt="Black Mirror" />
-            <h2>Black Mirror</h2>
+      <div className="App">
+        <header>
+          <div className="table">
+          <CoversComponent title='BlackMirror' image={BlackMirror} />
+          <CoversComponent title='BreakingBad' image={BreakingBad} />
+          <CoversComponent title='DeathNote' image={DeathNote} />
           </div>
-          <div className="wrap">
-            <img src={BreakingBad} className="image" alt="BreakingBad" />
-            <h2>Breaking Bad</h2>
-          </div>
-          <div className="wrap">
-            <img src={DeathNote} className="image" alt="Death Note" />
-            <h2>Death Note</h2>
-          </div>
-        </div>
-        
 
           <div className="table">
-            <div className="wrap">
-              <img src={GameOfThrones} className="image" alt="GameOfThrones" />
-              <h2>Game of Thrones</h2>
-            </div>
-            <div className="wrap">
-              <img src={TheWalkingDead} className="image" alt="The Walking Dead" />
-              <h2>The Walking Death</h2>
-            </div>
-            <div className="wrap">
-              <img src={TheWire} className="image" alt="The Wire" />
-              <h2>The Wire</h2>
-            </div>  
+            <CoversComponent title='Game of Thrones' image={GameOfThrones} />
+            <CoversComponent title='TheWalkingDead' image={TheWalkingDead} />
+            <CoversComponent title='TheWire' image={TheWire} />
           </div>
-          
-        
-         {/* <img src={img} className="App-logo" alt="cover" />  */}
+
         </header>
       </div>
     );
   }
+ 
 }
+const CoversComponent = (props) => {
+  return (
+    <div className="wrap">
+      <img src={props.image} className="image" alt={props.title} />
+      <h2>{props.title}</h2>
+    </div>
+  );
+};
 
 
 export default App;
