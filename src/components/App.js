@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Details from './Details';
 import Gallery from './Gallery';
 
@@ -8,14 +8,17 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route path="/gallery" exact component={Gallery} />
-          <Route path="/details" exact component={Details} />
+          <Switch>
+            <Route path="/" exact component={Gallery} />
+            <Route path="/:details" exact component={Details} />
+          </Switch>
         </div>
       </Router>
     );
   }
 
 }
+
 
 
 
