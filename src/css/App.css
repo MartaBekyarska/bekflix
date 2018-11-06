@@ -1,22 +1,23 @@
 .App {
   text-align: center;
- 
-
-}
-.table {
-  height: 100%;
-  width: 100%;
-  display: flex;
-
-
-  }
+ }
+ html, body {
+   height: 100%;
+ }
 
 .wrap {
-  flex: 1;
-  margin: 1.5em;
+  flex: 1 1 0;
   position: relative;
+  flex-basis: 350px;
 
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
 h2 {
   position: absolute;
   bottom: 0;
@@ -60,10 +61,6 @@ h2 {
   font-size: large;
 }
 
-@media only screen and (max-width: 600px) {
-  .table {
-    flex-direction: column;
-  }
-}
+
 
 
