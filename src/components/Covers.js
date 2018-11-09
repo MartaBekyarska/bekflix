@@ -15,7 +15,7 @@ const covers = [
 
     According to the Albuquerque Journal, the film will begin shooting under the title “Greenbrier” in mid-November and will run through February.
     
-    The New Mexico film office told the Journal a film from Sony Pictures with such a title will begin shooting next month\. The project is said to track the escape of a kidnapped man and his quest for freedom\. The film office did not immediately respond to TheWrap’s request for comment.
+    The New Mexico film office told the Journal a film from Sony Pictures with such a title will begin shooting next month. The project is said to track the escape of a kidnapped man and his quest for freedom. The film office did not immediately respond to TheWrap’s request for comment.
     ` },
     {id: 'deathnote', title: 'Death Note', image: DeathNote, message: `A high school student named Light Turner discovers a mysterious notebook that has the power to kill anyone whose name is written within its pages, and launches a secret crusade to rid the world of criminals.
     Director: Adam Wingard
