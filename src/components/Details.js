@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import covers from './Covers';
+import '../css/Details.css';
 
 class Details extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            message: null
+            cover: {}
         }
     }
 
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                message: 'Hello, this will be the details page for each Movie & TV show :)'
-            });
-        }, 3000);
+       this.setState({
+            cover: covers.find((cover) => {
+                return cover.id === this.props.match.params.details
+            })
+       })
     }
+
     render() {
         return (
             <div>
-                <h1>{this.state.message}</h1>
+                <h1 className='heading'>{this.state.cover.title}</h1>
+                <img src={this.state.cover.image} />
+                <h3>{this.state.cover.message}</h3>
+                
                 <Link to='/'>Back to Home page</Link>
             </div>
         );
