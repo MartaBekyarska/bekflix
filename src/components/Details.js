@@ -37,12 +37,18 @@ class Details extends Component {
             return <Redirect to='/not-found' />
         } else {
             return (
-                <div>
-                    <h1 className='heading'>{this.state.cover.title}</h1>
-                    <img src={this.state.cover.image} alt='tvShow' />
-                    <h3>{this.state.cover.message}</h3>
+                <div className="details">
+                    <div className='heading'>
+                        <h1>{this.state.cover.title}</h1>
+                    </div>
+                    <div className='contain image'>
+                        <img src={this.state.cover.image} alt='tvShow' />
+                    </div>
+                    <div className='contain synopsis'>
+                        <h3>{this.state.cover.synopsis}</h3>
+                    </div>
+                    <div className='link'><Link to='/'>Back to Home page</Link></div>
 
-                    <Link to='/'>Back to Home page</Link>
                 </div>
             );
         }

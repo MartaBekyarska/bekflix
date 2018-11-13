@@ -1,7 +1,62 @@
-body {
-    background-color: #DDDDDD;
+* {
+    padding: 0;
+    margin: 0
 }
-.heading {
-    color: #293C7A;
 
+body {
+    background-color: grey;
+    text-align: center;
 }
+
+h3 {
+    color: white;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 70%;
+    }
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
+   
+}
+
+.heading {
+    color: white;
+    flex: 2 100%;
+    border: 2px solid black;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    
+}
+.contain {
+    flex: 1;
+    background-color: black;
+}
+
+img {
+    width: 40%;
+   
+}
+
+
+.link {
+    flex: 2 100%;
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .details {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+    .synopsis {
+        padding-left: 35px;
+    }
+   
+    }
