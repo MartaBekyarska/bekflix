@@ -45,7 +45,13 @@ class Details extends Component {
                         <img src={this.state.cover.image} alt='tvShow' />
                     </div>
                     <div className='contain synopsis'>
-                        <h3>{this.state.cover.synopsis}</h3>
+                        <h3>{this.state.cover.synopsis}</h3> 
+                        <div className='creator'>
+                            <h3>{this.state.cover.creator}</h3>
+                        </div>
+                        <div className='stars'>
+                            <h3>{this.state.cover.stars}</h3>
+                        </div>
                     </div>
                     <div className='link'><Link to='/'>Back to Home page</Link></div>
 
