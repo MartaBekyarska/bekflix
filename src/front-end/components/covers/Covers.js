@@ -1,10 +1,9 @@
-import BlackMirror from './img/BlackMirror.jpg';
-import BreakingBad from './img/BreakingBad.jpg';
-import DeathNote from './img/DeathNote.jpg';
-import GameOfThrones from './img/GameOfThrones.jpg';
-import TheWalkingDead from './img/TheWalkingDead.jpg';
-import TheWire from './img/TheWire.jpg';
-import '../css/App.css';
+import BlackMirror from '../img/BlackMirror.jpg';
+import BreakingBad from '../img/BreakingBad.jpg';
+import DeathNote from '../img/DeathNote.jpg';
+import GameOfThrones from '../img/GameOfThrones.jpg';
+import TheWalkingDead from '../img/TheWalkingDead.jpg';
+import TheWire from '../img/TheWire.jpg';
 
 
 const covers = [

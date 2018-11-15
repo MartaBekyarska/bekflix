@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/App.css';
-import CoverComponent from './Cover';
-import covers from './Covers';
+import '../app/App.css';
+import CoverComponent from '../cover/Cover';
+import covers from '../covers/Covers';
 
 const Gallery = () => {
   return (

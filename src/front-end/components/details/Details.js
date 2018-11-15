@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import covers from './Covers';
-import '../css/Details.css';
+import covers from '../covers/Covers';
+import '../../css/Details.css';
 
 class Details extends Component {
 
