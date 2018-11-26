@@ -1,6 +1,6 @@
-const express = require('express')
-const app = express()
-const port = 3001
+const express = require('express');
+const app = express();
+const port = 3001;
 const covers = require('./shows');
 
 app.get('/rest/shows', (req, res) => res.send(covers));
