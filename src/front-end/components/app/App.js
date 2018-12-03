@@ -9,22 +9,20 @@ class App extends Component {
 
   render() {
 
-      return (
-        <Router>
-          <div className='App'>
-            <Switch>
-              <Route path='/' exact component={Gallery} />
-              <Route path='/not-found' exact component={NotFound} />
-              <Route path='/:details' exact component={Details} />
-            </Switch>
-          </div>
-        </Router>
-      );
-    
+    return (
+      <Router>
+        <div className='App'>
+          <Switch>
+            <Route path='/' exact component={Gallery} />
+            <Route path='/not-found' exact component={NotFound} />
+            <Route path='/:details' exact component={Details} />
+          </Switch>
+        </div>
+      </Router>
+    );
+
   }
-
 }
-
 
 
 

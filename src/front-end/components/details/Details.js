@@ -13,9 +13,6 @@ class Details extends Component {
         }
     }
 
-
-
-
     componentDidMount() {
         let cover = covers.find((cover) => {
             return cover.id === this.props.match.params.details
