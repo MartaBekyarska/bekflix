@@ -16,11 +16,9 @@ class Gallery extends React.Component {
   componentDidMount() {
     fetch('/rest/shows')
       .then(response => {
-        console.log(response);
         return response.json();
       })
       .then((covers) => {
-        console.log(covers);
         this.setState({ covers });
       });
   }
