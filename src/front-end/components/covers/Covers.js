@@ -11,7 +11,7 @@ const covers = [
         id: 'blackmirror',
         title: 'Black Mirror',
         image: BlackMirror,
-        synopsis: `An anthology series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.`,
+        synopsis: `An anthology, series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.`,
         stars: `Stars: Daniel Lapaine, Hannah John-Kamen, Michaela Coel`, 
         creator: 'Creator: Charlie Brooker'
 },
