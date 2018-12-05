@@ -9,7 +9,7 @@ import TheWire from '../img/TheWire.jpg';
 const covers = [
     {
         id: 'blackmirror',
-        title: 'Black Mirror',
+        title: 'Black Mirror!',
         image: BlackMirror,
         synopsis: `An anthology, series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.`,
         stars: `Stars: Daniel Lapaine, Hannah John-Kamen, Michaela Coel`, 
