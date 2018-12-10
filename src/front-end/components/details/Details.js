@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import covers from '../covers/Covers';
+import Loader from '../loading/Loading';
 import '../../css/Details.css';
 
 class Details extends Component {
@@ -35,7 +36,7 @@ class Details extends Component {
         } else {
             return (
                 <div className="details">
-                    <div className='heading'>
+                    {/* <div className='heading'>
                         <h1>{this.state.cover.title}</h1>
                     </div>
                     <div className='contain image'>
@@ -50,8 +51,8 @@ class Details extends Component {
                             <h3>{this.state.cover.stars}</h3>
                         </div>
                     </div>
-                    <div className='link'><Link to='/'>Back to Home page</Link></div>
-
+                    <div className='link'><Link to='/'>Back to Home page</Link></div> */}
+                    <Loader />
                 </div>
             );
         }
